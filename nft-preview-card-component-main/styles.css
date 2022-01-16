@@ -1,0 +1,115 @@
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+hr {
+    margin: 15px;
+    border-color: hsl(215, 20%, 45%);
+    opacity: 0.5;
+}
+
+footer {
+    display:flex;
+}
+
+.box {
+    height: 500px;
+    width: 300px;
+    margin: 200px 32% 200px 32%;
+    border: 15px solid hsla(215, 61%, 10%, 0.925);
+    border-radius: 30px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 0.8%;
+    box-shadow:  15px 15px 25px hsl(215, 63%, 5%);
+
+}
+
+.front-image {
+    margin: 6%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.title {
+    color: white;
+    font-weight:bold;
+    font-size: 130%;
+    margin-bottom: 5%;
+    margin-left: 6%;
+    transition: 0.5s ease;
+}
+
+.offer {
+    color: hsl(215, 21%, 53%);
+    font-weight: bold;
+    margin-left: 6%;
+}
+
+.elements-in-line {
+    display: flex;
+    margin-top: 5%; 
+    margin-left: 6%;
+    align-items: center;
+
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    font-weight: 900;
+    padding: 5px;
+}
+
+.eth-img {
+    margin-top: 5px;
+}
+
+.time-left, .clock-img {
+    color: hsl(215, 21%, 53%);
+    position: absolute;
+}
+
+.time-left {
+    margin-left: 194px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.clock-img {
+    margin-left: 175px;
+    font-size: 22px;
+}
+
+.avatar {
+    border:  1px solid white;
+    border-radius: 50%;
+    margin: 0 15px;
+    padding: 1px;
+}
+
+.author {
+    color: hsl(215, 21%, 53%);
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.name {
+    color:white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.name:hover, .title:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.front-image:hover{
+    opacity: 0.2;
+    background-color: hsl(178, 100%, 50%);
+}
