@@ -1,5 +1,6 @@
 * {
     font-family: 'Outfit', sans-serif;
+    marrgin: 0 auto;
 }
 
 body {
@@ -20,7 +21,7 @@ footer {
     position: relative;
     height: 500px;
     width: 300px;
-    margin: 200px 32% 200px 32%;
+    margin: 200px auto 200px auto;
     border: 15px solid hsla(215, 61%, 10%, 0.925);
     border-radius: 30px;
     background-color: hsl(216, 50%, 16%);
@@ -118,6 +119,10 @@ footer {
     color:hsl(178, 100%, 50%);
 }
 
+.attribution {
+    color:white;
+}
+
 #front:hover + #eye, .eye-icon:hover + #eye {
     opacity: 1;
 }
@@ -130,3 +135,4 @@ footer {
 #eye:hover + #front{
     opacity: 0.5;
 }
+
