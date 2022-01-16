@@ -17,6 +17,7 @@ footer {
 }
 
 .box {
+    position: relative;
     height: 500px;
     width: 300px;
     margin: 200px 32% 200px 32%;
@@ -29,9 +30,17 @@ footer {
 }
 
 .front-image {
+    position: relative;
     margin: 6%;
     border-radius: 5%;
     overflow: hidden;
+}
+.eye-icon {
+    position: absolute;
+    left: 110px;
+    top: 110px;
+    opacity: 0;
+
 }
 
 .title {
@@ -109,7 +118,15 @@ footer {
     color:hsl(178, 100%, 50%);
 }
 
-.front-image:hover{
-    opacity: 0.2;
-    background-color: hsl(178, 100%, 50%);
+#front:hover + #eye, .eye-icon:hover + #eye {
+    opacity: 1;
+}
+
+#front:hover{
+    opacity: 0.5;
+    background-color:turquoise;
+}
+
+#eye:hover + #front{
+    opacity: 0.5;
 }
