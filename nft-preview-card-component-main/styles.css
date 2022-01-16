@@ -1,6 +1,6 @@
 * {
     font-family: 'Outfit', sans-serif;
-    marrgin: 0 auto;
+    margin: 0;
 }
 
 body {
@@ -8,9 +8,9 @@ body {
 }
 
 hr {
-    margin: 15px;
+    margin: 15px 0px 0px 0px;
     border-color: hsl(215, 20%, 45%);
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 footer {
@@ -18,51 +18,75 @@ footer {
 }
 
 .box {
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: 500px;
     width: 300px;
-    margin: 200px auto 200px auto;
-    border: 15px solid hsla(215, 61%, 10%, 0.925);
+    margin: 100px auto 100px auto;
     border-radius: 30px;
     background-color: hsl(216, 50%, 16%);
-    padding: 0.8%;
-    box-shadow:  15px 15px 25px hsl(215, 63%, 5%);
+    padding: 25px;
+    box-shadow: 0px 33px 5px 20px hsl(216, 60%, 9%);
 
 }
+.shadow-box {
+    position: absolute;
+    background-color: rgb(12, 24, 43);
+    z-index: -1;
+    width: 440px;
+    height: 670px;
+    left: -45px;
+    top: -25px;
+    border-radius: 10%;
 
+}
 .front-image {
     position: relative;
-    margin: 6%;
     border-radius: 5%;
     overflow: hidden;
+    z-index: 2;
+    opacity: 1;
+    transition: 0.5s ease;
 }
 .eye-icon {
     position: absolute;
-    left: 110px;
-    top: 110px;
+    left: 150px;
+    top: 150px;
     opacity: 0;
+    z-index: 3;
+    transition: 0.5s ease;
 
+}
+
+.color-layout {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    width: 300px;
+    height: 272px;
+    border-radius: 6%;
+    opacity: 1;
+    z-index: 1;
+    
 }
 
 .title {
     color: white;
     font-weight:bold;
     font-size: 130%;
-    margin-bottom: 5%;
-    margin-left: 6%;
+    margin: 20px 0px 10px 0px;
     transition: 0.5s ease;
 }
 
 .offer {
     color: hsl(215, 21%, 53%);
     font-weight: bold;
-    margin-left: 6%;
+    margin: 10px 0;
 }
 
 .elements-in-line {
     display: flex;
-    margin-top: 5%; 
-    margin-left: 6%;
+    margin: 10px 0;
     align-items: center;
 
 }
@@ -84,20 +108,20 @@ footer {
 }
 
 .time-left {
-    margin-left: 194px;
+    margin-left: 230px;
     font-weight: 900;
     font-size: 14px;
 }
 
 .clock-img {
-    margin-left: 175px;
+    margin-left: 210px;
     font-size: 22px;
 }
 
 .avatar {
     border:  1px solid white;
     border-radius: 50%;
-    margin: 0 15px;
+    margin: 17px 0 0 0;
     padding: 1px;
 }
 
@@ -105,17 +129,17 @@ footer {
     color: hsl(215, 21%, 53%);
     font-weight: bold;
     font-size: 16px;
-    margin-top: 5px;
+    margin: 22px 0 0 15px;
 }
 
-.name {
+.author-name {
     color:white;
     font-size: 14px;
     font-weight: 600;
     transition: 0.5s ease;
 }
 
-.name:hover, .title:hover{
+.author-name:hover, .title:hover{
     color:hsl(178, 100%, 50%);
 }
 
@@ -123,16 +147,10 @@ footer {
     color:white;
 }
 
-#front:hover + #eye, .eye-icon:hover + #eye {
+#front:hover + .eye-icon {
     opacity: 1;
 }
 
 #front:hover{
     opacity: 0.5;
-    background-color:turquoise;
 }
-
-#eye:hover + #front{
-    opacity: 0.5;
-}
-
