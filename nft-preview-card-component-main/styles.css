@@ -1,10 +1,32 @@
 * {
     font-family: 'Outfit', sans-serif;
-    margin: 0;
+}
+
+a:link {
+    color: hsl(215, 21%, 53%);
+
+}
+
+a:link:hover {
+    color:hsl(178, 100%, 50%);
 }
 
 body {
     background-color: hsl(217, 54%, 11%);
+}
+
+h1 {
+    color: white;
+    font-size: 25px;
+    margin: 25px 0px 10px 0px;
+    transition: 0.5s ease;
+    cursor:pointer;
+}
+
+h2 {
+    color: hsl(215, 21%, 53%);
+    font-size: 19px;
+    margin: 10px 0 0 0;
 }
 
 hr {
@@ -23,7 +45,7 @@ footer {
     position: relative;
     height: 550px;
     width: 300px;
-    margin: 200px auto 100px auto;
+    margin: 20% auto;
     border-radius: 30px;
     background-color: hsl(216, 50%, 16%);
     padding: 25px;
@@ -48,6 +70,7 @@ footer {
     z-index: 2;
     opacity: 1;
     transition: 0.5s ease;
+    cursor:pointer;
 }
 .eye-icon {
     position: absolute;
@@ -68,20 +91,6 @@ footer {
     opacity: 1;
     z-index: 1;
     
-}
-
-.title {
-    color: white;
-    font-weight:bold;
-    font-size: 130%;
-    margin: 25px 0px 10px 0px;
-    transition: 0.5s ease;
-}
-
-.offer {
-    color: hsl(215, 21%, 53%);
-    font-weight: bold;
-    margin: 10px 0 0 0;
 }
 
 .elements-in-line {
@@ -137,14 +146,19 @@ footer {
     font-size: 14px;
     font-weight: 600;
     transition: 0.5s ease;
+    cursor:pointer;
 }
 
-.author-name:hover, .title:hover{
+.author-name:hover, h1:hover{
     color:hsl(178, 100%, 50%);
 }
 
 .attribution {
+    position: absolute;
+    margin-top:630px;
     color:white;
+    font-size:14px;
+    font-weight: 700;
 }
 
 #front:hover + .eye-icon {
